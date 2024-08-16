@@ -1,14 +1,17 @@
 {
-  "name": "dogerat",
+  "name": "telegram-card-scraper-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "engines": {
-    "node": "16.13.2"
-  },
+  "description": "A Telegram bot to scrape card details from channels (conceptual conversion from Python)",
+  "main": "index.js",  // Or your main JavaScript file
   "scripts": {
     "start": "node index.js"
   },
-  "author": "shiva yadav",
-  "license": "ISC"
+  "dependencies": {
+    "telegraf": "^4.12.2",      // Or your preferred Telegram bot library
+    "node-fetch": "^3.3.2",     // For making HTTP requests (if needed)
+    "fs": "0.0.1-security",     // For file system operations
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"         // Optional, for automatic restarts during development
+  }
 }
